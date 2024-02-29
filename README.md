@@ -31,12 +31,16 @@ for i in range(len(X)):
   den+=(X[i]-XMean)**2
 m=num/den
 c=YMean-m*XMean
-print(m,c)
+print('slope',m,'\n','y-intecept',c,'\n')
 Y_Pred=m*X+c
-print(Y_Pred)
+print("Predicted-Values:",Y_Pred)
+plt.title("Univariate Regression")
+plt.xlabel("X-Values")
+plt.ylabel("Y-Values")
 plt.scatter(X,Y)
 plt.plot(X,Y_Pred,color="red")
 plt.show()
+
 
 Developed by: Jeshwanth Kumar
 RegisterNumber:  212223240114
@@ -44,7 +48,8 @@ RegisterNumber:  212223240114
 ```
 
 ## Output:
-![image](https://github.com/Jeshwanthkumarpayyavula/Find-the-best-fit-line-using-Least-Squares-Method/assets/145742402/e30e5e0d-23fa-4d0b-b9e7-d73681f82550)
+![image](https://github.com/Jeshwanthkumarpayyavula/Find-the-best-fit-line-using-Least-Squares-Method/assets/145742402/c4d0a446-e9b4-4141-9051-c790923a470f)
+
 
 
 
